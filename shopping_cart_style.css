@@ -104,6 +104,7 @@ main {
 	font-size: 18px;
 	margin-bottom: 10px;
 	position: relative;
+	width: 150px;
 	left: 230px;
 	top: -50px;
 	color: #636363;
@@ -158,3 +159,15 @@ main {
 	left: 80px;
 	top: 0px;
 }
+
+/*checkout button*/
+#checkout{
+	display: block;
+	position: absolute;
+	width: 150px;
+	left: 80%;
+	top: 80%;
+}
+
+
+
