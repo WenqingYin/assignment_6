@@ -104,7 +104,10 @@ main {
 	font-size: 18px;
 	margin-bottom: 10px;
 	position: relative;
+<<<<<<< HEAD
 	width: 150px;
+=======
+>>>>>>> 873aa674fb69451ed34171ef3ab9d8d428e00fcd
 	left: 230px;
 	top: -50px;
 	color: #636363;
@@ -159,6 +162,7 @@ main {
 	left: 80px;
 	top: 0px;
 }
+<<<<<<< HEAD
 
 /*checkout button*/
 #checkout{
@@ -171,3 +175,5 @@ main {
 
 
 
+=======
+>>>>>>> 873aa674fb69451ed34171ef3ab9d8d428e00fcd
