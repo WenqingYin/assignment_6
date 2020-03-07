@@ -98,19 +98,19 @@
 			<form class="glazing">
 				<h3>Choose your glazing</h3>
 				<div class="none">
-					<input type="radio" id="none" name="glazing" value="none">
+					<input type="radio" id="none" name="glazing" value="None" checked onclick='checkGlazing(this)'>
 					<label for="none">None</label>
 				</div>
 				<div class="sugar-milk">
-					<input type="radio" id="sugar-milk" name="glazing" value="Sugar-milk">
+					<input type="radio" id="sugar-milk" name="glazing" value="Sugar-milk" checked onclick='checkGlazing(this)'>
 					<label for="sugar-milk">Sugar-milk</label>
 				</div>
 				<div class="vanilla-milk">
-					<input type="radio" id="vanilla-milk" name="glazing" value="Vanilla-milk">
+					<input type="radio" id="vanilla-milk" name="glazing" value="Vanilla-milk" checked onclick='checkGlazing(this)'>
 					<label for="vanilla-milk">Vanilla-milk</label>
 				</div>
 				<div class="double-chocolate">
-					<input type="radio" id="double-chocolate" name="glazing" value="Double-chocolate">
+					<input type="radio" id="double-chocolate" name="glazing" value="Double-chocolate" checked onclick='checkGlazing(this)'>
 					<label for="double-chocolate">Double-chocolate</label>
 				</div>
 			</form>
@@ -120,30 +120,33 @@
 			<form class="quantity">
 				<h3>Choose the quantity</h3>
 				<div class="one">
-					<input type="radio" id="one" name="quantity" value="1">
+					<input type="radio" id="one" name="quantity" value="1" checked onclick='checkQuantity(this);subtotalUpdate()'>
 					<label for="one">1</label>
 				</div>
 				<div class="three">
-					<input type="radio" id="three" name="quantity" value="3">
+					<input type="radio" id="three" name="quantity" value="3" checked onclick='checkQuantity(this);subtotalUpdate()'>
 					<label for="three">3</label>
 				</div>
 				<div class="six">
-					<input type="radio" id="six" name="quantity" value="6">
+					<input type="radio" id="six" name="quantity" value="6" checked onclick='checkQuantity(this);subtotalUpdate()'>
 					<label for="six">6</label>
 				</div>
 				<div class="twelve">
-					<input type="radio" id="twelve" name="quantity" value="12">
+					<input type="radio" id="twelve" name="quantity" value="12" checked onclick='checkQuantity(this);subtotalUpdate()'>
 					<label for="twelve">12</label>
 				</div>
 			</form>
 
 			<!--add to cart button-->
-			<a href="shopping_cart.html"><img id="add_to_cart" src="images/add_to_cart.png"></a>
+
+			<a href="shopping_cart.html"><button onclick='addItem'>Add to Cart</button></a>
+
 
 			<!--total price-->
 			<div id="total_price">
 				<h3>Subtotal:</h3>
 			</div>
+
 
 			<!--customer reviews-->
 			<div class="slide">
@@ -151,6 +154,7 @@
 				<img src="images/slide.png">
 			</div>
 		</div>
+		<script src="main.js" type="text/javascript"></script>
 	</body>
 		<h1>
 
