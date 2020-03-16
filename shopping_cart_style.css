@@ -5,7 +5,7 @@
 
 
 h2 {
-	font-family: futura;
+	font-family: georgia;
 	color: black;
 	font-weight: 50;
 	font-size: 18px;
@@ -75,7 +75,7 @@ header img {
 #title h1{
 	display: inline-block;
 	position: relative;
-	font-family: futura;
+	font-family: georgia;
 	font-size: 30px;
 	left: 8%;
 }
@@ -83,7 +83,7 @@ header img {
 #title h2{
 	display: inline-block;
 	position: relative;
-	font-family: futura;
+	font-family: georgia;
 	font-size: 30px;
 	left: 40%;
 	font-weight: 600;
@@ -100,7 +100,7 @@ main {
 
 .name-of-item {
 	display: inline-block;
-	font-family: futura;
+	font-family: georgia;
 	font-size: 18px;
 	margin-bottom: 10px;
 	position: relative;
@@ -113,7 +113,7 @@ main {
 .flavor-of-item{
 	display: block;
 	position: relative;
-	font-family: futura;
+	font-family: georgia;
 	font-size: 14px;
 	color: #A6C39F;
 	left: 230px;
@@ -124,7 +124,7 @@ main {
 .quantity-of-item{
 	display: inline-block;
 	position: relative;
-	font-family:futura;
+	font-family:georgia;
 	font-size: 15px;
 	top: -50px;
 	left: 15%;
@@ -135,7 +135,7 @@ main {
 .subtotal-of-item{
 	display: inline-block;
 	position: relative;
-	font-family: futura;
+	font-family: georgia;
 	font-size: 15px;
 	color: black;
 	top: -50px;
@@ -143,10 +143,10 @@ main {
 	margin-left: 150px;
 }
 
-.delete{
-	display: inline-block;
+#delete{
+	display: none;
 	position: relative;
-	font-family:futura;
+	font-family:georgia;
 	font-size: 10px;
 	top: -50px;
 	left: 10%;
@@ -154,7 +154,7 @@ main {
 	color: red;
 }
 /*the box of each item*/
-.item_in_cart {
+#item_in_cart {
 	display: block;
 	box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.1), 0 0px 1px 0 rgba(0, 0, 0, 0.1);
 	padding-top: 20px;

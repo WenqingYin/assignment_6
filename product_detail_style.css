@@ -4,7 +4,7 @@
 }
 
 #bg {
-	display: block;
+	display: display;
 	position: absolute;
 	width: 120%;
 	height: 120%;
@@ -14,21 +14,23 @@
 	opacity: 0.7;
 	 /* Add the blur effect reference: https://www.w3schools.com/howto/howto_css_blurred_background.asp*/
 	filter: blur(2px);
-
 	z-index: 7;
 }
 
 #original {    
-	display: block;
-	position: absolute;
+	display: display;
+	position: relative;
 	z-index: 10;
 	background-color: white;
-	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	top:-420px;
+	width: 80%;
+	min-width: 1000px;
+	max-width: 1200px;
 	height: 700px;
-	left: 25%;
-	top: 20%;
 	border: 20px;
-	border-radius: 15px;
+	border-radius: 7px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -40,6 +42,7 @@
 	height: 25px;
 	left: 95%;
 	top: 20px;
+	mix-blend-mode: multiply;
 }
 
 /*product picture*/
@@ -54,7 +57,7 @@
 
 .product_title{
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	font-size: 30px;
 	position: absolute;
 	left: 40%;
@@ -62,7 +65,7 @@
 }
 .description{
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	color: gray;
 	position: absolute;
 	left: 40%;
@@ -71,7 +74,7 @@
 
 .pricing{
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	color: black;
 	position: absolute;
 	left: 40%;
@@ -100,7 +103,7 @@
 /*glazing, quantity title*/
 .glazing h3{
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	color: black;
 	position: relative;
 	font-weight: 100;
@@ -109,7 +112,7 @@
 }
 .quantity h3{
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	color: black;
 	position: relative;
 	font-weight: 100;
@@ -136,7 +139,7 @@
 }
 
 label{
-	font-family: futura;
+	font-family: georgia;
 	position: relative;
 	color: gray;
 }
@@ -147,7 +150,7 @@ button{
 	background-color: #A6C39F;
 	width: 180px;
 	height: 50px;
-	font-family: futura;
+	font-family: georgia;
 	color: white;
 	font-size: 20px;
 	left: 70%;
@@ -159,7 +162,7 @@ button{
 .slide h3 {
 	display: block;
 	position: relative;
-	font-family: futura;
+	font-family: georgia;
 	font-weight: 100;
 	color: gray;
 	font-size: 15px;
@@ -173,6 +176,7 @@ button{
 	left: 50%;
 	top: 220px;
 	width: 50px;
+	mix-blend-mode: multiply;
 
 }
 
@@ -180,7 +184,7 @@ button{
 #total_price {
 	display: block;
 	position: relative;
-	font-family: futura;
+	font-family: georgia;
 	color: gray;
 	font-weight: 100;
 	font-size: 25px;
@@ -192,7 +196,7 @@ button{
 
 /* background：copy from manu_style.css*/
 h2 {
-	font-family: futura;
+	font-family: georgia;
 	color: black;
 	font-weight: 50;
 	font-size: 18px;
@@ -268,7 +272,6 @@ main {
 	justify-items: center;
 	align-items: center;
 	align-content: center;
-
 }
 
 /*product picture*/
@@ -301,7 +304,7 @@ main {
 /* product title */
 main h3{
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	font-weight: 300;
 	font-size: 20px;
 	position: relative;
@@ -312,7 +315,7 @@ main h3{
 /*price*/
 .price {
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	color: gray;
 	position: relative;
 	left: 15px;

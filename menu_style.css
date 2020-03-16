@@ -4,7 +4,7 @@
 }
 
 h2 {
-	font-family: futura;
+	font-family: georgia;
 	color: black;
 	font-weight: 50;
 	font-size: 18px;
@@ -120,7 +120,7 @@ main {
 /* product title */
 main h3{
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	font-weight: 300;
 	font-size: 20px;
 	position: relative;
@@ -131,7 +131,7 @@ main h3{
 /*price*/
 .price {
 	display: block;
-	font-family: futura;
+	font-family: georgia;
 	color: gray;
 	position: relative;
 	text-align: center;

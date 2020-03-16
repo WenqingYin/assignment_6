@@ -4,70 +4,77 @@
 }
 
 h2 {
-	font-family: futura;
-	color: white;
+	font-family: georgia;
+	color: #5A5B50;
 	font-weight: 50;
 	font-size: 20px;
 }
 
 /* navigation bar */
 header nav h2{
+	font-family: georgia;
+	color: #5A5B50;
+	font-weight: 50;
+	font-size: 20px;
 	display: inline-block;
 	position: relative;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 0px;
+	padding: 10px;
+	left: 30px;
+	top: 45px;
+	z-index: 20;
 }
 
-/* adjust the individual nav bar*/
-#home {
-	position: relative;
-	left: 10%;
+nav {
+	display: block;
+	width: 40%;
 }
 
-#menu {
-	position: relative;
-	left: 8%;
-}
-
-#about {
-	position: relative;
-	left: 30%;
-}
+/* sign-up button*/
 
 #sign {
+	display: inline-block;
 	position: relative;
-	left: 15%;
+	float: right;
+	right: 100px;
+	padding: 5px;
+	border: 2px solid #5A5B50;
+	z-index: 20;
+	color: #5A5B50;
 }
+
 
 /* quick pick-up and order button*/
 
 #action{
 	display:block;
-	position: relative;
+	width: 100%;
+	position: absolute;
 	margin-left:auto;
     margin-right:auto;
-  	text-align: center
+  	text-align: center;
 
 }
+
 #pickup, #order {
 	display: inline-block;
 	position: relative;
 	top: 500px;
 	padding:10px;
 	color: gray;
-	font-family:futura;
-	z-index: 2;
+	font-family:georgia;
+	z-index: 20;
 	background-color: white;
-	width: 200px;
-	margin-left: 30px;
-	margin-right: 30px;
+	width: 300px;
+	margin-left: 50px;
+	margin-right: 50px;
 	margin-top: 20px;
 	text-align: center;
 	border: 20px solid white;
-	border-radius: 5px;
+	border-radius: 0px;
 	/*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 
@@ -77,7 +84,6 @@ header nav h2{
 	min-height: 600px;
 	min-width: 1000px;
 	width: 100%;
-
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -85,12 +91,11 @@ header nav h2{
 	overflow: scroll;
 }
 
-#banner p {
+#banner h1 {
 	display: inline-block;
 	text-align: center;
-	font-family: futura;
+	font-family: georgia;
 	font-size: 40px;
-	font-weight: 300;
 	color: white;
 	position: absolute;
 	top: 35%;
@@ -104,8 +109,222 @@ header nav h2{
 header img {
 	display:inline-block;
 	position: relative;
-	top: 30px;
-	left: 37%;
-	width: 260px;
-	height: 35px;
+	float: right;
+	top: 50px;
+	right: 300px;
+	width: 320px;
+	height: 32px;
+	/*ref: https://stackoverflow.com/questions/12662759/make-white-background-of-image-transparent-in-css*/
+	mix-blend-mode: multiply;
 }
+
+
+/* new product section */
+#new_product{
+	display: block;
+	position: relative;
+	background-color: #FAEED3;
+	top: 750px;
+	width: 90%;
+	height: 300px;
+	margin: auto;
+}
+
+#new_product h1{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	color:  #A47C65;
+	left: 60px;
+	top: 30px;
+}
+
+#new_product p{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	width: 50%;
+	color:  #A47C65;
+	left: 60px;
+	top: 40px;
+}
+
+#new_product_pic{
+	display: block;
+	position: absolute;
+	width: 350px;
+	right: 7%;
+	z-index: 10;
+
+}
+
+#new_product button{
+	display: block;
+	position: relative;
+	left: 60px;
+	top: 80px;
+	background-color: #FAEED3;
+	border: 3px solid #A47C65;
+	font-family: georgia;
+	font-size: 20px;
+	color: #A47C65;
+	padding: 10px;
+}
+
+/* explore flavors section */
+#explore_flavors{
+	display: block;
+	position: relative;
+	background-color: #A47C65;
+	top: 800px;
+	width: 90%;
+	height: 300px;
+	margin: auto;
+}
+
+#explore_flavors_pic{
+	display: block;
+	position: absolute;
+	width: 400px;
+	left: 6%;
+	z-index: 10;
+}
+
+#explore_flavors h1{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	color:  #FAEED3;
+	left: 500px;
+	top: 30px;
+}
+
+#explore_flavors p{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	color:  #FAEED3;
+	left: 500px;
+	width: 50%;
+	top: 40px;
+}
+
+#explore_flavors button{
+	display: block;
+	position: relative;
+	left: 500px;
+	top: 80px;
+	background-color: #A47C65;
+	border: 3px solid #FAEED3;
+	font-family: georgia;
+	font-size: 20px;
+	color: #FAEED3;
+	padding: 10px;
+
+}
+
+/* behind the scene section */
+#behind_the_scene{
+	display: block;
+	position: relative;
+	background-color: #FAEED3;
+	top: 190px;
+	width: 100%;
+	height: 300px;
+	margin: auto;
+}
+
+#behind_the_scene_pic{
+	display: block;
+	position: absolute;
+	width: 450px;
+	height: 300px;
+	right: 0%;
+	z-index: 10;
+}
+
+#behind_the_scene h1{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	color:  #A47C65;
+	left: 60px;
+	top: 30px;
+}
+
+#behind_the_scene p{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	width: 50%;
+	color:  #A47C65;
+	left: 60px;
+	top: 40px;
+}
+
+#behind_the_scene button{
+	display: block;
+	position: relative;
+	left: 60px;
+	top: 80px;
+	background-color: #FAEED3;
+	border: 3px solid #A47C65;
+	font-family: georgia;
+	font-size: 20px;
+	color: #A47C65;
+	padding: 10px;
+}
+
+/* store section */
+#interior {
+	display: block;
+	position: relative;
+	background-color: #A47C65;
+	top: 250px;
+	width: 100%;
+	height: 300px;
+	margin: auto;
+}
+
+#interior_pic{
+	display: block;
+	position: absolute;
+	width: 440px;
+	height: 300px;
+	left: 0%;
+	z-index: 10;
+}
+
+#interior h1{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	color:  #FAEED3;
+	left: 500px;
+	top: 30px;
+}
+
+#interior p{
+	display: block;
+	position: relative;
+	font-family: georgia;
+	color:  #FAEED3;
+	left: 500px;
+	width: 50%;
+	top: 40px;
+}
+
+
+/* footer */
+footer {
+	display: block;
+	position: relative;
+	left: -100px;
+	width: 120%;
+	height: 300px;
+	background-color: #5A5B50;
+	top: 300px;
+}
+
+
+

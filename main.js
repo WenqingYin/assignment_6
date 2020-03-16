@@ -1,4 +1,23 @@
 
+
+//display product detail floating window 
+//commentted out because of some issues: product a is not clickable 
+/*
+let onClickItem=document.getElementsByClassName('product a');
+let floatingWindow=document.getElementById('original');
+let background=document.getElementById('bg');
+console.log(onClickItem);
+
+onClickItem.onclick=function(){
+	console.log('print');
+	floatingWindow.style.display='block';
+	background.style.display='block';
+}
+
+*/
+
+
+
 //get quantity and glazing as array 
 var quantity=document.getElementsByName('quantity');
 var glazing=document.getElementsByName('glazing');
@@ -17,12 +36,13 @@ function createItem(){
 	var name="Original Cinnamon Roll";
 	var price=3.28; 
 	let itemOne=new itemProperty(name,0,'None',price); 
-	return item1; 
+	return itemOne; 
 }
 
 let itemOne=new itemProperty("Original Cinnamon Roll",0,'None',3.28);
 
 //check which button of quantity is cickd, update the data of item
+
 function checkQuantity(item){
 	if(item.checked){
 		itemOne.quantity=item.value;
@@ -31,6 +51,7 @@ function checkQuantity(item){
 	//update the value in the shopping cart page 
 	//document.getElementById("quantity-of-item").innerHTML="Quantity: "+item.value; 
 }
+
 
 //check which button of glazing is cickd, update the data of item
 function checkGlazing(item){
@@ -74,5 +95,6 @@ function addItem(){
 	//update total
 	document.querySelector("#totalAmount").innerHTML="Total: "+subtotal(itemOne);
 }
+
 
 
