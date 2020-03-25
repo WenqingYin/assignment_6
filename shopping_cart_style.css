@@ -108,6 +108,7 @@ main {
 	top: -50px;
 	color: #636363;
 	font-weight: 100;
+	width: 15%;
 }
 
 .flavor-of-item{
@@ -130,6 +131,7 @@ main {
 	left: 15%;
 	margin-left: 170px;
 	color: gray;
+	width: 15%;
 }
 
 .subtotal-of-item{
@@ -139,12 +141,12 @@ main {
 	font-size: 15px;
 	color: black;
 	top: -50px;
-	left: 10%;
-	margin-left: 150px;
+	left: 5%;
+	margin-left: 100px;
 }
 
-#delete{
-	display: none;
+.delete{
+	display: inline-block;
 	position: relative;
 	font-family:georgia;
 	font-size: 10px;
@@ -152,9 +154,11 @@ main {
 	left: 10%;
 	margin-left: 80px;
 	color: red;
+	width: 5%;
+	cursor: pointer; 
 }
 /*the box of each item*/
-#item_in_cart {
+.item_in_cart {
 	display: block;
 	box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.1), 0 0px 1px 0 rgba(0, 0, 0, 0.1);
 	padding-top: 20px;
@@ -162,11 +166,40 @@ main {
 
 
 /*product picture*/
-.pic {
+.pic-of-item {
 	display: block;
 	position: relative;
 	left: 80px;
 	top: 0px;
+}
+
+#checkout{
+	display: block;
+	position: relative;
+	background-color: #A6C39F;
+	width: 150px;
+	height: 30px;
+	font-family: georgia;
+	font-size:20px;
+	color: white;
+	border-width: 0px;
+	left: 70%;
+	margin: 10px;
+}
+
+#continue{
+	display: block;
+	position: relative;
+	background-color: white;
+	border: 2px solid #A6C39F;
+	width: 150px;
+	height: 30px;
+	font-family: georgia;
+	font-size:14px;
+	color: #A6C39F;
+	left: 70%;
+	z-index: 20;
+	margin: 10px;
 }
 
 

@@ -288,10 +288,16 @@ main {
 	display: block;
 	position: relative;
 	z-index: 5;
-	width: 40px;
+	width: 60px;
 	height: 35px;
-	top: 20px;
-	left: 180px;
+	top: 30px;
+	left: 130px;
+	background-color: #A6C39F;
+	width: 100px;
+	height: 20px;
+	font-family: georgia;
+	color: white;
+	font-size: 10px;
 }
 
 .product{

@@ -100,14 +100,21 @@ main {
 	top: 10px;
 }
 
-.cart_plus{
+.view_details{
 	display: block;
 	position: relative;
 	z-index: 5;
-	width: 40px;
+	width: 60px;
 	height: 35px;
-	top: 20px;
-	left: 180px;
+	top: 30px;
+	left: 130px;
+	background-color: #A6C39F;
+	width: 100px;
+	height: 20px;
+	font-family: georgia;
+	color: white;
+	font-size: 10px;
+	border-width: 0px;
 }
 
 .product{
@@ -143,3 +150,200 @@ main h3{
 	top: 200px;
 	left: 50px;
 }
+
+
+
+
+/*product detail floating window*/
+
+
+#bg {
+	display: none;
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	top: -20px;
+	left: -20px;
+	background-color: gray; 
+	opacity: 0.7;
+	 /* Add the blur effect reference: https://www.w3schools.com/howto/howto_css_blurred_background.asp*/
+	filter: blur(2px);
+	z-index: 0;
+}
+
+#product_detail_page {    
+	display: none;
+	position: relative;
+	z-index: 30;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	top:-420px;
+	width: 80%;
+	min-width: 1000px;
+	max-width: 1200px;
+	height: 700px;
+	border: 20px;
+	border-radius: 7px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* close button*/
+#close{
+	display: block;
+	position: relative;
+	width: 25px;
+	height: 25px;
+	left: 95%;
+	top: 20px;
+	mix-blend-mode: multiply;
+}
+
+/*product picture*/
+#detail_image{
+	display: block;
+	width: 250px;
+	height: 170px;
+	position: relative;
+	left: 7%;
+	top: 20%;
+}
+
+.product_title{
+	display: block;
+	font-family: georgia;
+	font-size: 30px;
+	position: absolute;
+	left: 40%;
+	top: 15%;
+}
+.description{
+	display: block;
+	font-family: georgia;
+	color: gray;
+	position: absolute;
+	left: 40%;
+	top: 23%;
+}
+
+.pricing{
+	display: block;
+	font-family: georgia;
+	color: black;
+	position: absolute;
+	left: 40%;
+	top: 27%;
+}
+
+/*lines*/
+#line_up{
+	top: 20px;
+	display: block;
+	position: relative;
+	left: 40%;
+	height: 1px;
+	width: 400px;
+}
+
+#line_down{
+	top: 90px;
+	display: block;
+	position: relative;
+	left: 40%;
+	height: 1px;
+	width: 400px;
+}
+
+/*glazing, quantity title*/
+.glazing h3{
+	display: block;
+	font-family: georgia;
+	color: black;
+	position: relative;
+	font-weight: 100;
+	left: 40%;
+	top: 45px;
+}
+.quantity h3{
+	display: block;
+	font-family: georgia;
+	color: black;
+	position: relative;
+	font-weight: 100;
+	left: 40%;
+	top: 110px;
+	z-index: 40;
+}
+
+/*glazing, quantity choice*/
+.selected_glazing{
+	display: inline-block;
+	position: relative;
+	left: 40%;
+	top: 60px;
+	margin: 10px;
+}
+
+.selected_quantity {
+	display: inline-block;
+	position: relative;
+	left: 40%;
+	top: 120px;
+	margin: 10px;
+}
+
+label{
+	font-family: georgia;
+	position: relative;
+	color: gray;
+}
+
+#add_to_cart{
+	display: block;
+	position: relative;
+	background-color: #A6C39F;
+	width: 180px;
+	height: 50px;
+	font-family: georgia;
+	color: white;
+	font-size: 20px;
+	left: 70%;
+	top: 200px;
+	z-index: 20;
+}
+
+
+.slide h3 {
+	display: block;
+	position: relative;
+	font-family: georgia;
+	font-weight: 100;
+	color: gray;
+	font-size: 15px;
+	left: 42%;
+	top: 200px;
+}
+
+.slide img {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 220px;
+	width: 50px;
+	mix-blend-mode: multiply;
+
+}
+
+
+#subtotal {
+	display: block;
+	position: relative;
+	font-family: georgia;
+	color: gray;
+	font-weight: 100;
+	font-size: 25px;
+	left: 40%;
+	top: 150px;
+
+}
+
