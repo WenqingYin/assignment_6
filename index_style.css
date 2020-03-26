@@ -321,9 +321,18 @@ footer {
 	position: relative;
 	left: -100px;
 	width: 120%;
-	height: 300px;
+	height: 100px;
 	background-color: #5A5B50;
 	top: 300px;
+}
+
+footer p{
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 30px;
+	margin: 3px;
+	left: -100px;
 }
 
 
